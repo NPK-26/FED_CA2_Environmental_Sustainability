@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/* Reset Stylesheet */
+body{
+    width: auto;
+}
+div, div.mb-3 {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+.heading {
+    text-align: center;
+    color: #273F3F;
+    max-width: fit-content;
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding: 0.1em 1em;
+    margin: 1em auto;
+    border-top: 0.2em solid #273F3F;
+    border-bottom: 0.5em double #273F3F;
+    box-shadow: none;
+    background: none;
+    outline: none;
+}
+
+/* Map */
+div#map {
+    display: block;
+    margin: 1em auto;
+    padding: 0;
+    max-width: fit-content;
+    overflow: overlay;
+}
+
+div#map img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* For the information paragraphs */
+.modal-content {
+    background-color: #9AD6D3;
+    border: 1px solid #273F3F;
+}
+
+.modal-header {
+    background-color: #273F3F;
+    color: #9AD6D3;
+}
+
+.modal-header h1 {
+    font-size: 1.5em;
+}
+
+p.mission {
+    padding: 1em 2em;
+}
+
+.modal-footer {
+    border-color: #9AD6D3;
+}
+
+.second{
+    border: 1px solid #273F3F;
+}
+
+/* Style of the Difficulty text */
+.difficult {
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #8C1C13;
+    }
+
+/* Locations of pins */
+button.pin {
+    position: absolute;
+}
+
+button#marker1 {
+    top: 130px;
+    left: 150px;
+}
+
+#marker2 {
+    top: 300px;
+    left: 970px;
+}
+
+#marker3 {
+    top: 430px;
+    left: 1080px;
+}
+
+#marker4 {
+    top: 400px;
+    left: 650px;
+}
+
+#marker5 {
+    top: 80px;
+    left: 750px;
+}
+
+/* Design for my personal goals */
+.goal {
+    display: block;
+    margin: 0 auto 1em auto;
+    border: 5px solid darkgreen;
+    padding: 0em;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #9AD6D3;
+}
+
+.goal h4 {
+    background-color: #127D5F;
+    color: white;
+    margin: 0;
+    padding: 0.5em;
+    border-bottom: 5px solid darkgreen;
+}
+
+.goal ul {
+    list-style-type: none;
+    font-weight: bold;
+    padding: 1.1em;
+}
+
+.goal li {
+    padding: 0.2em;
+}
+
+/* Form */
+label{
+ font-weight: bolder;
+}
+div.form{
+    margin: 5em;
+    padding: 2em;
+    background-color: #9AD6D3;
+    font-size: 1em;
+    outline: 2px solid darkgreen;
+    justify-self: center;
+    box-shadow: #273F3F 10px 10px 30px;
+}
+div.power{
+    border: 1px solid #273F3F;
+}
+form h1{
+    text-align: center;
+    font-weight: bolder;
+}

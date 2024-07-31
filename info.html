@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <title>Missions</title>
+    <link rel="icon" type="image/x-icon" href="./images/planet-earth.png">
+    <!-- <a href="https://www.flaticon.com/free-icons/global" title="global icons">Global icons created by Freepik - Flaticon</a> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles_info.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Main nav for desktop -->
+        <nav class="main">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Missions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./SP.html">SP and Environment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutme.html">About Me</a>
+                </li>
+        </nav>
+        <!-- Main nav for mobile -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./info.html">Missions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./SP.html">SP and Environment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./aboutme.html">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1>&#62;&#62;&#62; Project T.E.R.R.A</h1>
+        <h2>&#62;&#62; AIM: Save the Earth!!!</h2>
+    </header>
+    <main>
+        <div class="heading">Choose your mission</div>
+        <div class="position-relative" id="map">
+            <!-- Image by Clker-Free-Vector-Images from pixabay "https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=306338" -->
+            <img src="./images/world-map-gefd87bda5_1280.png" alt="map" />
+            <!-- Mission 1 button -->
+            <button type="button" class="btn pin" id="marker1" data-bs-toggle="modal" data-bs-target="#mission1">
+                <img src="./images/pin.png" alt="Star" />
+            </button>
+            <!-- Mission 2 button -->
+            <button type="button" class="btn pin" id="marker2" data-bs-toggle="modal" data-bs-target="#mission2">
+                <img src="./images/pin.png" alt="Star" />
+            </button>
+            <!-- Mission 3 button -->
+            <button type="button" class="btn pin" id="marker3" data-bs-toggle="modal" data-bs-target="#mission3">
+                <img src="./images/pin.png" alt="Star" />
+            </button>
+            <!-- Mission 4 button -->
+            <button type="button" class="btn pin" id="marker4" data-bs-toggle="modal" data-bs-target="#mission4">
+                <img src="./images/pin.png" alt="Star" />
+            </button>
+            <!-- Mission 5 button -->
+            <button type="button" class="btn pin" id="marker5" data-bs-toggle="modal" data-bs-target="#mission5">
+                <img src="./images/pin.png" alt="Star" />
+            </button>
+        </div>
+        <!-- Mission Modal -->
+        <!-- Mission 1 -->
+        <div class="modal fade" id="mission1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ModalLabel">Conserve Water</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="difficult">
+                            <u>DIFFICULTY:</u> &#9734;&#9734;&#9734;&#9734;<br />
+                        </div>
+                        <p class="mission">
+                            Water is a natural resource that we use everyday but it is also a limited natural
+                            resource.
+                            Take shorter showers instead of taking a bath.
+                            When doing your laundry, run a full load in the washing machine.
+                            The same goes for using the dishwasher and don't rinse your plates before you run it
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                            onclick="document.getElementById('Check1').checked=!document.getElementById('Check1').checked;">Accept</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mission 2 -->
+        <div class="modal fade" id="mission2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Stay Informed and Share the News</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="difficult"><u>DIFFICULTY:</u> &#9734;</div>
+                        <p class="mission">
+                            Stay ahead by reading the latest news, whether by social media or news sites.
+                            Make sure they are from credible sources or else you will be decieved by misinformation!
+                            Don't just read the news. Share them with everyone. Talk about the issues that are happening
+                            globally.
+                            Let your friends and family be aware of climate change, the fights for equality
+                            and poverty. Let them know that they should speak up to get the changes needed to reach our
+                            goal.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                            onclick="document.getElementById('Check2').checked=!document.getElementById('Check2').checked;">Accept</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mission 3 -->
+        <div class="modal fade" id="mission3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Choose what you buy carefully</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="difficult"><u>DIFFICULTY:</u> &#9734;&#9734;&#9734;</div>
+                        <p class="mission">
+                            Making a difference in what you buy can help.
+                            If you buy goods with minimal packaging, you are reducing plastics that end up in landfills.
+                            Buy more energy efficient light bulbs to reduce use of electricity.
+                            Many fruits and vegetables go to waste because people won't buy them for their
+                            unconventional shapes. Persuade your parents or family to buy those funnny shaped fruits.
+                            While you are at it, support the local businesses by shopping local. It keeps people
+                            employed and save trucks from going on long-distance drives.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                            onclick="document.getElementById('Check3').checked=!document.getElementById('Check3').checked;">Accept</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mission 4 -->
+        <div class="modal fade" id="mission4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Power-Saving</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="difficult"><u>DIFFICULTY:</u> &#9734;&#9734;</div>
+                        <p class="mission">
+                            When there is a light not in use, turn it off.
+                            Plug all of the appliances into a power strip to easily turn it off when you are not using
+                            any of them. Use more energy efficient models of appliances and use energy-saving light
+                            bulbs instead.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                            onclick="document.getElementById('Check4-1').checked=!document.getElementById('Check4-1').checked;">Accept</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Decline</button>
+                    </div>
+                    <div class="second">
+                        <div class="modal-body">
+                            <div class="difficult"><u>DIFFICULTY:</u> &#9734;&#9734;&#9734;&#9734;</div>
+                            <p class="mission">
+                                Convince your household to install solar panels if you have the option to do so. As a
+                                bonus, it saves the electric bill.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                                onclick="document.getElementById('Check4-2').checked=!document.getElementById('Check4-2').checked;">Accept</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Decline</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mission 5 -->
+        <div class="modal fade" id="mission5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Reduce Plastic</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="difficult"><u>DIFFICULTY:</u> &#9734;&#9734;&#9734;&#9734;&#9734;</div>
+                        <p class="mission">
+                            <strong>UN reports: </strong><br />"Approximately 7 billion of the 9.2 billion tonnes of
+                            plastic produced from
+                            1950-2017 became plastic waste, ending up in landfills or dumped."<br />
+                            Plastic is a big problem and it's everywhere. Although it's difficult to completely avoid
+                            it, we can do our best to minimise using it in our lives.
+                            Start by taking a water bottle everywhere with you instead of buying a new bottle made of
+                            plastic. Bring your own bag when shopping. Recycle when you can. You can do this!
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                            onclick="document.getElementById('Check4').checked=!document.getElementById('Check4').checked;">Accept</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <!-- Form -->
+        <div class="form">
+            <form>
+                <h1><u>Accept Missions</u></h1>
+                <div class="mb-3">
+                    <!-- First name -->
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" id="fname" class="form-control is-invalid" name="firstname"
+                        placeholder="Your name.." aria-describedby="validationFNameFeedback" required>
+                    <div id="validationFNameFeedback" class="invalid-feedback">
+                        Please enter your first name.
+                    </div>
+                </div>
+                <!-- Last Name -->
+                <div class="mb-3">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" id="lname" class="form-control is-invalid" name="lastname"
+                        placeholder="Your last name.." aria-describedby="validationLNameFeedback" required>
+                    <div id="validationLNameFeedback" class="invalid-feedback">
+                        Please enter your last name.
+                    </div>
+                </div>
+                <!-- Country -->
+                <div class="mb-3">
+                    <label for="country" class="form-label">Select your Country</label>
+                    <select class="form-select" id="country" name="country" aria-label="select country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="china">China</option>
+                        <option value="malaysia">Malaysia</option>
+                        <option value="Singapore" selected>Singapore</option>
+                        <option value="uk">UK</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>          
+                     <!-- Email -->
+                <div class="mb-3">
+                    <label for="InputEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control is-invalid" id="InputEmail"
+                        aria-describedby="validationemailFeedback" required>
+                    <div id="validationemailFeedback" class="invalid-feedback">
+                        Please enter an Email.
+                    </div>
+                </div>
+                <!-- Checkboxes -->
+                <div class="checkmission">
+                    <h3><u>Selected Missions</u></h3>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">Conserve Water</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="Check2">
+                        <label class="form-check-label" for="Check2">Stay Informed and Share the News</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="Check3">
+                        <label class="form-check-label" for="Check3">Choose what you buy carefully</label>
+                    </div>
+                    <div class="power">
+                        <label class="form-check-label">Power-Saving</label>
+                        <div class="mb-6 form-check">
+                            <input type="checkbox" class="form-check-input" id="Check4-1">
+                            <label class="form-check-label" for="Check4-1"><u>DIFFICULTY:</u> &#9734;&#9734;</label>
+                        </div>
+                        <div class="mb-6 form-check">
+                            <input type="checkbox" class="form-check-input" id="Check4-2">
+                            <label class="form-check-label" for="Check4-2"><u>DIFFICULTY:</u>
+                                &#9734;&#9734;&#9734;&#9734;</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="Check5">
+                        <label class="form-check-label" for="Check5">Reduce Plastic</label>
+                    </div>
+                </div>
+                <!-- Comment -->
+                <div class="mb-3">
+                    <label for="Suggestions" class="form-label">Suggestions for more Missions</label>
+                    <textarea class="form-control" id="Suggestions" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-light">Submit</button>
+            </form>
+        </div>
+        <!-- My Goals -->
+        <div class="goal">
+            <h4>My personal goals:</h4>
+            <ul>
+                <li>
+                    Reduce Using Electricity
+                </li>
+                <li>
+                    Not waste food
+                </li>
+                <li>
+                    Walk, bike or use public transport to get around
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <footer>
+        Website designed and coded by &#9830; Nandar Phyo Khaing &#9830; Class: DCITP/FT/1A/04 &#9830; For FED CA1
+    </footer>
+</body>
+
+</html>

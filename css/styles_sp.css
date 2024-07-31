@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* Reset stylesheet */
+div {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+/* Header style */
+body > header> h1{
+    background: #ffffff url(./SPlogo.png) left / 25%  no-repeat ;
+}
+/* For smaller devices like tablet */
+@media (max-width: 767px){
+    body > header> h1{
+        background: #ffffff url(./SPlogo.png) left / 50%  no-repeat ;
+    }  
+}
+
+/* Style and Format of Information boxes */
+main > div{
+    display: block;
+    align-items: center;
+}
+h5.card-title{
+    padding: 0.5em;
+    margin: 0;
+    background-color: #273F3F;
+    color: #9AD6D3;
+    font-size: 1.5em;
+    font-weight: 1000;
+}
+svg{
+    background-color: #cddbdb;
+}
+#Imgcarousel.carousel.slide > .carousel-inner > div.carousel-item{
+    background-color: #cddbdb;
+}
+div.card{
+    margin: 5em auto;
+    padding: 2em;
+    background-color: #9AD6D3;
+    font-size: 1em;
+    outline: 2px solid darkgreen;
+    justify-self: center;
+    box-shadow: #273F3F 10px 10px 30px;
+}
+ul{
+    text-align: left;
+}
+h6{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+div.carousel-item{
+    height: 350px;
+}
+
+/* Image Styles */
+img.d-block{
+    margin: 0 auto;
+    height: 100%;
+    /* min-width: 100%; */
+    box-shadow: #273F3F 10px 10px 30px;
+}
+
+#Imgcarousel.carousel.slide > .carousel-inner > div.carousel-item#CCC {
+    background-color: white;
+}
+
+/* So the pictures doesn't look awkward in smaller screens */
+@media (max-width: 575.98px){
+    div.carousel-item{
+        height: 200px;
+    }
+    div.card{
+        margin: 2em auto;
+        padding: 1em;
+        font-size: 1em;
+    }
+    img.d-block{
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <title>SP and Environment</title>
+    <link rel="icon" type="image/x-icon" href="./images/planet-earth.png">
+    <!-- <a href="https://www.flaticon.com/free-icons/global" title="global icons">Global icons created by Freepik - Flaticon</a> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles_sp.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Main Nav for desktop -->
+        <nav class="main">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./info.html">Missions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./SP.html">SP and Environment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutme.html">About Me</a>
+                </li>
+        </nav>
+        <!-- Mobile Nav-->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./info.html">Missions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./SP.html">SP and Environment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./aboutme.html">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1>&nbsp;</h1>
+        <h2>&nbsp;What SP has done for sustainability:</h2>
+    </header>
+    <main>
+        <!-- Carousel -->
+        <div id="Imgcarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#Imgcarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#Imgcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#Imgcarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#Imgcarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/campus.jpg" class="d-block" alt="...">
+                    <!-- Attribution: SP website at https://www.sp.edu.sg/images/default-source/content-migration/content-migration/1000x220_misc_1.jpg?sfvrsn=6689ea93_4 -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="card-title">School Campus</h5>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/spenv2.jpeg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="card-title">SP Environment Club</h5>
+                    </div>
+                </div>
+                <div class="carousel-item" id="CCC">
+                    <img src="./images/ccc_header-copy.png" class="d-block w-100" alt="...">
+                    <!-- Source: https://www.sp.edu.sg/sp/education/common-core-curriculum/about-the-ccc#:~:text=The%20Common%20Core%20Curriculum%20(CCC,or%20job%20you%20go%20into. -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="card-title">Common Core Curriculum (CCC) for Students</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/solarpanel.jpg" class="d-block" alt="...">
+                    <!-- Source: https://www.sp.edu.sg/sp/education/common-core-curriculum/about-the-ccc#:~:text=The%20Common%20Core%20Curriculum%20(CCC,or%20job%20you%20go%20into. -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="card-title">SP & Recycling</h5>
+                    </div>
+                    <!-- Source: Image by "https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562240"StockSnap from Pixabay -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Imgcarousel" data-bs-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#273F3F"
+                    class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                        d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Imgcarousel" data-bs-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#273F3F"
+                    class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                    <path fill-rule="evenodd"
+                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Some cards -->
+        <div class="card w-75 mb-3 text-center">
+            <div class="card-body">
+                <h5 class="card-title">School Campus</h5>
+                <p class="card-text">
+                    <!-- Source: Singapore Polytechnic at https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters [Accessed 22 May 2023]-->
+                    <strong>Singapore Polytechnic</strong> was established in 1954 and is the first and
+                    oldest polytechnic in Singapore.<br />
+                    Over the years, the campus has gone through many changes to be what it is today.
+                <ul>
+                    <li>SP has <strong>4</strong> certified <strong>Green Mark Platinum Buildings</strong>
+                        with
+                        efforts
+                        to
+                        have more certified.</li>
+                    <li>The campus also has <strong>230 species of Flora</strong>. Including the infamous
+                        Brown
+                        Woolly
+                        Fig
+                        Heritage Tree located near Food Court 1. Students can admire the diverse scenery as
+                        they
+                        walk to
+                        their classes.</li>
+                    <li>SP has <strong>smart sensors to monitor the facilities</strong> to make sure the
+                        school
+                        environment
+                        is comfortable for both students and staffs, and their health and well-being.</li>
+                    <li>In order to encourage eco-friendliness, SP has <strong>ceased distributing plastic
+                            water
+                            bottles</strong> at events and installed water dispensers for students and staff
+                        alike
+                        to
+                        use
+                        instead.</li>
+                    <li>The Polytechnic also has plans to <strong>install photo-voltaic panels</strong>
+                        across
+                        campus to
+                        harness renewable clean energy.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="card w-75 mb-3 text-center">
+            <div class="card-body">
+                <!-- Source: Singapore Polytechnic CCAs https://www.sp.edu.sg/ccas/our-clubs/service-learning/sp-environment-club [Accessed 22 May 2023] -->
+                <h5 class="card-title">SP Environment Club</h5>
+                <p class="card-text">
+                    <cite>"The SP Environment Club (SPENV) is a CCA group concerned about the natural
+                        environment. SPENV
+                        is committed to promoting environmental awareness and a sustainable lifestyle both
+                        on campus and
+                        beyond. We organise many green campaigns and projects meant to make a difference in
+                        SP, such as
+                        roadshows and out of school trails."</cite> - SP official website.<br />
+                    You can find out more about them on Instagram at <a href="https://instagram.com/sp_env">@sp_env</a>
+                    or email them at <a href="mailto:sp_env@ichat.sp.edu.sg">sp_env@ichat.sp.edu.sg</a>
+                </p>
+            </div>
+        </div>
+        <div class="card w-75 mb-3 text-center">
+            <div class="card-body">
+                <!-- Source: Singapore Polytechnic https://www.sp.edu.sg/sp/education/common-core-curriculum/aims [Accessed 23 May 2023] -->
+                <h5 class="card-title">Common Core Curriculum (CCC) for Students</h5>
+                <p class="card-text">
+                    The CCC consists ten modules designed to make students into critical thinkers, have an understanding
+                    of
+                    the sustainability issues and the problems faced by both local and global communities, and be
+                    challenged
+                    to make change with the skill taught in CCC in order to build a better and more sustainable
+                    world.<br />
+                    They are:
+                <ul>
+                    <li>Thinking Critically about the UN SDGs</li>
+                    <li>Data Fluency</li>
+                    <li>Artificial Intelligence and Its Impact</li>
+                    <li>Persuasive Communication with Storytelling</li>
+                    <li>Problem Solving with Creative and Computational Thinking</li>
+                    <li>Digital Communication for Impact</li>
+                    <li>Collaboration in the Digital Age</li>
+                    <li>Effective Writing for the Workplace</li>
+                    <li>Personal Branding and Career Agility</li>
+                    <li>Sustainable Innovation Project</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="card w-75 mb-3 text-center">
+            <div class="card-body">
+                <h5 class="card-title">SP's Recycling Efforts</h5>
+                <p class="card-text">SP also has created many ways to recycle the old to make the new.
+                    The two most prominent examples are:
+                <ul>
+                    <li>
+                        <!-- Source: SP News https://www.sp.edu.sg/sp/news/sp/the-road-to-recycling-could-well-be-paved-with-plastic-waste [Accessed 23 May 2023] -->
+                        <h6>Using Plastic Waste to build roads</h6>
+                        <p>
+                            <cite>"Local construction company Samwoh has teamed up with SP researchers and students to
+                                use
+                                plastic waste in asphalt to build more durable road surfaces. Research scientist Lim
+                                Zheng
+                                Bang and research engineer Estee Tan of SP's Advanced Materials Technology Centre, and
+                                Dr
+                                Handojo Djati Utomo and Dr Chan Chin Loong, lecturers at the School of Architecture and
+                                the
+                                Built Environment, worked with two groups of students to test the asphalt made with the
+                                plastic pellets. The team found that asphalt made from plastic waste could last at least
+                                20
+                                per cent longer than regular asphalt, and had levels of chemical leaching that were
+                                within
+                                official guidelines. This is the first time such pellets have been used in creating
+                                asphalt
+                                in Singapore. The team will continue its research, and hopes to test its product on a
+                                stretch of road soon."</cite> <strong>- SP (20 Jan 2020)</strong>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>Launch of first Solar Photovoltaics recycling line</h6>
+                        <p>
+                            <cite>
+                                "The first solar photovoltaics recycling line is being piloted at SP. The system
+                                involves a
+                                machine to take apart solar panels, so its components - including precious materials
+                                like
+                                silver and glass - can be recycled. It has a target recycling capacity of 80 panels a
+                                day
+                                and a recovery rate of up to 95%. Dr Thong Ta Xuan, Senior Research Scientist from TIE
+                                was
+                                interviewed. The Polytechnic has also established two laboratories - SP-Sembcorp Solar
+                                PV
+                                Research Lab and SP-CHINT Smart Electrical Power Training Laboratory to enhance research
+                                and
+                                development in the field of solar energy." </cite> <strong> - SP (01 Nov 2022)</strong>
+                        </p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        Website designed and coded by &#9830; Nandar Phyo Khaing &#9830; Class: DCITP/FT/1A/04 &#9830; For FED CA1
+    </footer>
+</body>
+
+</html>

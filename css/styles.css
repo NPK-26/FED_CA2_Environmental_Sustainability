@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/* Reset stylesheet */
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Webpage Format */
+html {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #B4E1F9;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Navigation Bar */
+
+@media (min-width: 768px) {
+    nav.main {
+        visibility: visible;
+    }
+
+    nav.navbar.bg-body-tertiary {
+        display: none;
+    }
+
+    ul.nav.nav-tabs {
+        background-color: #273F3F;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: #0a0908;
+        background-color: #24fef9;
+        border-color: #3cd1c8;
+    }
+
+    a.nav-link:hover {
+        color: #24fef9;
+        background-color: rgba(18, 125, 95, 0.7);
+    }
+}
+
+@media (max-width: 767px) {
+
+    nav.main {
+        display: none;
+    }
+
+    nav.navbar.bg-body-tertiary {
+        visibility: visible;
+    }
+
+    .bg-body-tertiary {
+        background-color: #273F3F !important;
+    }
+
+    .navbar-toggler {
+        background-color: #24fef9;
+    }
+
+    div.offcanvas-header {
+        background-color: #273F3F;
+    }
+
+    div.offcanvas-body {
+        background-color: #9AD6D3;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: #0a0908;
+        background-color: #24fef9;
+        border-color: #3cd1c8;
+    }
+
+    li.nav-item {
+        text-align: center;
+    }
+
+    a.nav-link:hover {
+        color: #24fef9;
+        background-color: rgba(18, 125, 95, 0.7);
+    }
+}
+
+/* Headers format */
+header>h1,
+h2 {
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    font-weight: bolder;
+}
+
+header>h1 {
+    padding: 1em 0 1em 0;
+    font-size: 2.5em;
+    color: #0a0908;
+}
+
+header>h2 {
+    padding: 0.5em 0 0.5em 0;
+    background-color: #273F3F;
+    color: #D8DBE2;
+    font-size: 1.3em;
+}
+
+/* Header Style */
+header>h1 {
+    background-image: url("banner.png");
+    /* background taken from https://pngtree.com/freebackground/teal-green-hexagonal-technology-background_1256634.html */
+    color: #0a0908;
+}
+
+/* format for div */
+div {
+    margin: 5em;
+    padding: 2em;
+    background-color: #9AD6D3;
+    font-size: 1em;
+    outline: 2px solid darkgreen;
+    justify-self: center;
+    box-shadow: #273F3F 10px 10px 30px;
+}
+
+
+/* Footers format and style */
+body>footer {
+    text-align: center;
+    background-color: #127D5F;
+    color: white;
+    margin: 0;
+    padding: 0.8em;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+/* For phone screens header */
+@media (max-width: 575.98px) {
+    header>h1 {
+        padding: 0.5em 0 0.5em 0;
+        font-size: 1.5em;
+    }
+
+    header>h2 {
+        padding: 0.2em 0 0.2em 0;
+        font-size: 1em;
+    }
+
+    div {
+        margin: 2em;
+        padding: 1em;
+        background-color: #9AD6D3;
+        font-size: 1em;
+        outline: 1px solid darkgreen;
+        justify-self: center;
+        box-shadow: #273F3F 10px 10px 30px;
+    }
+}

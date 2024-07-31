@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* a{margin: 0;} */
+
+body {
+    background: url(./hero.jpg) no-repeat center / cover;
+}
+/* Image by (André Santana AndreMS) from "https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=811875" */
+
+/* So nav div doesn't become messed up */
+nav div {
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Put paragraphs into grid */
+body>main {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 15%;
+}
+body>main>div.notnav {
+    display: flex;
+    align-items: center;
+}
+
+/* Text Styles of a*/
+.question {
+    text-align: center;
+    font-size: 1.5em;
+    display: block;
+    clear: left;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #273F3F;
+}
+
+/* For links to other sites */
+a.paralink {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+    padding-top: 1em;
+    font-weight: bold;
+    color: #273F3F;
+}
+
+a.paralink:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+a.paralink:active {
+    color: darkslategray;
+}
+
+/* Images Formatting */
+.pic {
+    padding: 0;
+    margin: 0;
+    max-width: 25%;
+}
+
+/* Image Format */
+div.notnav>img {
+    display: block;
+    padding: 0;
+    clear: both;
+}
+
+/* For SP logo */
+img#SPlogo {
+    max-width: 100%;
+    float: right;
+    margin-right: 1em;
+}
+
+/* For sustainable goals logo */
+img#sdg {
+    max-width: 80%;
+    float: left;
+    margin-left: 1em;
+}
+
+/* View for device that is a tablet screen or smaller */
+@media (max-width: 767.98px) {
+    .pic {
+        max-width: 50%;
+        float: none;
+    }
+
+    div.notnav {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    img#sdg {
+        margin-top: 5%;
+        max-width: 100%;
+        float: none;
+        margin: 0;
+    }
+}
+
+/* View for device that is a large phone or smaller */
+@media (max-width: 575.98px) {
+    .pic {
+        max-width: 100%;
+    }
+    .question{
+        text-decoration: none;
+        color: green;
+    }
+}
+

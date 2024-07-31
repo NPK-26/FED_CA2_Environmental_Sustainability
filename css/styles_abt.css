@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* Header is different from other webpages */
+body > header > h1{
+    background-image: linear-gradient(to bottom right, white 1%, rgb(204, 153, 255) 50%,rgb(204, 51, 255) );
+}
+/* Reset style sheet */
+nav div, div.container-fluid.text-center {
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+div.row, div.col{
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+    margin: 0;
+}
+/* So HI looks bigger */
+div.talk > p::first-line{
+    font-variant: small-caps;
+    font-size: 3em;
+    font-weight: bold;
+}
+/* Design of boxes */
+div.talk{
+    margin: 0;
+    padding: 2em;
+    border: 2px double rgb(102, 0, 204);
+    box-shadow: rgb(51, 0, 102) 5px 5px 30px 1px;
+    background-image: url("./purple2.jpg");
+    border-radius: 50px 0 50px 0;
+}
+
+/* Layout of image */
+div img{
+    padding: 2em 0;
+}
+img{
+    width: 100%;
+}
+img#img1, img#img2{
+    filter: saturate(1.5) contrast(1.2);
+}
+img#img3{
+    padding: 1em;
+}
+
